@@ -46,7 +46,10 @@ pico_enable_stdio_usb(animatrix 0)
 
 # Add the standard library to the build
 target_link_libraries(animatrix
-        pico_stdlib)
+        pico_stdlib
+        hardware_timer
+        hardware_pwm
+        )
 
 # Add the standard include files to the build
 target_include_directories(animatrix PRIVATE
